@@ -34,6 +34,7 @@ app.post('/api/generate', async (req, res) => {
      res.json({
       ...data,
       duration
+      
     });
 
 
