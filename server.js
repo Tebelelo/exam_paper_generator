@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //Serve static files (like index.html) from the "public" folder
 app.use(express.static('public'));
