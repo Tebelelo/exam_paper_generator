@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const prompt = `Generate ${amount} exam questions for the category "${selectedText}", difficulty "${difficulty}", and type "${type}". Format them clearly and please do not include correct answers.`;
 
     // Call your secure backend
-    fetch("http://localhost:3000/api/generate", {
+    fetch("https://my-backend-service.onrender.com/api/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
